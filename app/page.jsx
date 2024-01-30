@@ -523,7 +523,7 @@ export default function Home() {
                 </h4>
                 <div className="record-image__text">
                   In less than six months, we significantly boosted the
-                  website's valuation by over 57% by leveraging high-authority
+                  website{"'"}s valuation by over 57% by leveraging high-authority
                   SEO practices, optimizing content to align perfectly with
                   search intent, and increasing visitors to the site by over
                   100%.

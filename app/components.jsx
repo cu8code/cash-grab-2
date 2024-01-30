@@ -99,7 +99,7 @@ export function Testimonial() {
                                             and are amping up our traffic and keyword rankings. Working
                                             with them is easy—
                                             <strong>
-                                                they're sharp, get our business, and have already pushed us
+                                                they{"'"}re sharp, get our business, and have already pushed us
                                                 to new heights.
                                             </strong>
                                         </p>
@@ -290,7 +290,7 @@ export function Graph() {
                             <div className="capabilities-text__number">$9,000</div>
                         </div>
                         <div className="capabilities-text">
-                            We've a proven record of
+                            We{"'"}ve a proven record of
                             <br />
                             increasing website revenue
                             <br />
@@ -440,7 +440,6 @@ export function Form() {
                             </label>
                         </div>
                     </div>
-                // 1
                     <div className="row-form">
                         <div className="text-block-22">Get back &nbsp;at</div>
                         <input
@@ -522,8 +521,8 @@ const dont_know_if_i_need_it = () => {
                         </div>
                         <div className="swiper-slide">
                             <div className="slide-header">
-                                "Working with Mohit and the entire BlackBook team has been a
-                                great experience..."
+                                {`"`}Working with Mohit and the entire BlackBook team has been a
+                                great experience...{`"`}
                             </div>
                             <div className="slide-text">
                                 “Working with Mohit and the entire BlackBook team has been a
