@@ -88,3 +88,38 @@ img {
     max-width: 100%;
     display: inline-block;
 }
+
+/* Card.css */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 16px; /* Spacing between cards */
+    padding: 20px;
+    min-width: 300px; /* Minimum width for each card */
+  }
+  
+  .card-text {
+    font-style: italic;
+  }
+  
+  .card-author {
+    margin-top: 10px;
+    text-align: right;
+  }
+  
+  .card-position,
+  .card-company {
+    display: block; /* Each on a new line */
+  }
+  /* Testimonials.css */
+.testimonials-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Keep all cards in a single line */
+    padding: 20px 0;
+  }
+  
+  .testimonials-scroller {
+    display: flex; /* Align cards horizontally */
+  }
+  

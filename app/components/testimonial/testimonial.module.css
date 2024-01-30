@@ -1,0 +1,93 @@
+/* Testimonial.module.css */
+/* Testimonial.module.css */
+.testimonial {
+    height: 40vw;
+    background-color: #ffffff; /* White background for the card */
+    border-radius: 10px; /* Rounded corners for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px; /* Spacing around the card */
+    padding: 25px; /* Padding inside the card */
+    max-width: 600px; /* Max width to ensure readability */
+    text-align: center; /* Center the text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  }
+  .testimonialImageContainer {
+    width: 100%; /* Full width of the container */
+    margin-bottom: 20px; /* Spacing between the image and the text */
+    display: flex; /* Use flexbox to center the image */
+    justify-content: center; /* Center the image horizontally */
+  }
+  
+  .testimonialImage {
+    width: 80px; /* Width of the image */
+    height: 80px; /* Height of the image */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the area without stretching */
+    border: 3px solid #f0f0f0; /* Optional border for the image */
+  }
+  .testimonialTitle {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .testimonial:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover for a "lifting" effect */
+  }
+  
+  .testimonialText {
+    font-style: italic;
+    color: #333333; /* Dark gray for better readability */
+    font-size: 18px; /* Slightly larger font size */
+    margin-bottom: 15px; /* Spacing between the testimonial and the author */
+  }
+  
+  .testimonialAuthor {
+    font-size: 16px; /* Slightly smaller font size for the author */
+    color: #555555; /* Medium gray for the author */
+    font-weight: bold; /* Bold for emphasis */
+  }
+  
+  .testimonialPosition {
+    display: block; /* New line for position */
+    font-size: 14px; /* Even smaller font size for the position */
+    color: #777777; /* Lighter gray for the position */
+  }
+  
+  .testimonialCompany {
+    display: block; /* New line for company */
+    font-size: 14px; /* Match font size with position */
+    color: #777777; /* Match color with position */
+  }
+  
+  /* Testimonials.module.css */
+/* Testimonials.module.css */
+.testimonialsSlider {
+    display: flex;
+    flex-direction: row; /* Stack cards vertically for now */
+    align-items: center; /* Center cards horizontally */
+    justify-content: center; /* Center cards vertically */
+    padding: 40px 0; /* Spacing at the top and bottom */
+    width: 100%;
+  }
+  
+  .button {
+    border: 1px solid #dddddd; /* Light border for the button */
+    background-color: #f9f9f9; /* Light background color for the button */
+    color: #333333; /* Dark text color for contrast */
+    padding: 10px 20px; /* Padding inside the button */
+    cursor: pointer; /* Cursor to pointer to indicate it's clickable */
+    font-size: 18px; /* Larger font size for readability */
+    border-radius: 5px; /* Rounded corners for the button */
+    margin: 0 15px; /* Spacing between buttons and testimonial card */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .button:hover {
+    background-color: #e7e7e7; /* Slightly darker background on hover */
+    border-color: #cccccc; /* Slightly darker border on hover */
+  }
+  

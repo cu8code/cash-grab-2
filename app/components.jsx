@@ -2,7 +2,6 @@ export function Testimonial() {
     return (
         <>
             <link rel={"stylesheet"} href={"/a.css"} />
-            &lt;&gt;
             <div className="max-width-full-2 align-center">
                 <div
                     data-delay={4000}

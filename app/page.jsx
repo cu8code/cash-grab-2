@@ -1,7 +1,50 @@
 "use client"
 
 import { useEffect } from "react";
-import { CallToAction, CompanyTestimonial, Footer, Form, Testimonial } from "./components";
+import { CallToAction, CompanyTestimonial, Footer, Form } from "./components";
+import Testimonials from "./components/testimonial/testimonial";
+
+
+const testimonialData = [
+  {
+    title:"Teaming up with Boringmarketing.com is a game-changer",
+    text: "Teaming up with Boringmarketing.com is a game-changer. They’re nailing our SEO needs and are amping up our traffic and keyword rankings. Working with them is easy—they're sharp, get our business, and have already pushed us to new heights.",
+    author: "Alex Johnson",
+    position: "Marketing Manager",
+    company: "Innovatech Ltd."
+  },
+  {
+    text: "Working with this team has been an absolute pleasure. Their dedication and passion for what they do is exemplified by their unrivaled customer support and attentiveness to our specific needs.",
+    author: "Samantha Lee",
+    position: "Product Owner",
+    company: "TechSphere Solutions"
+  },
+  {
+    text: "I'm truly impressed by the professionalism and high-quality service provided. They delivered on their promises and exceeded our expectations.",
+    author: "Michael Brown",
+    position: "CEO",
+    company: "Brown Industries"
+  },
+  {
+    text: "Their expertise in the field is unmatched and has been critical to the growth and success of our online presence. Highly recommended!",
+    author: "Emily Clark",
+    position: "Digital Strategist",
+    company: "Clark Media"
+  },
+  {
+    text: "From the initial concept to the final product, their attention to detail and creative approach have made a significant impact on our marketing strategy.",
+    author: "David Kim",
+    position: "Creative Director",
+    company: "Kim & Associates"
+  },
+  {
+    text: "The results speak for themselves. We've seen a considerable increase in sales and brand recognition since we started working with this amazing team.",
+    author: "Sophia Martinez",
+    position: "Sales Director",
+    company: "Martinez Retail Group"
+  }
+];
+
 
 export default function Home() {
   useEffect(() => {
@@ -87,7 +130,7 @@ export default function Home() {
       <div className="sharp-corner__div" />
     </div>
   </div>
-  <Testimonial />
+  <Testimonials testimonials={testimonialData} />
   <CompanyTestimonial />
   <div className="page-wrapper">
     <div className="section is--yellow">
