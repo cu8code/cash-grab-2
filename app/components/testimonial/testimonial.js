@@ -3,16 +3,16 @@ import React, { useState } from 'react';
 import styles from './testimonial.module.css'; // Import the CSS module
 
 
-const Testimonial = ({ text, author, position, company, imageUrl }) => (
-  <div className={styles.testimonial}>
-    <div className={styles.testimonialImageContainer}>
-      <img src={imageUrl} alt={author} className={styles.testimonialImage} />
-    </div>
-    <p className={styles.testimonialText}>{text}</p>
-    <div className={styles.testimonialAuthor}>
-      <strong>{author}</strong> - {position}, {company}
-    </div>
+const Testimonial = ({ title="title is not defined", text="title is not defined", author, position, company, imageUrl }) => (
+  <div className={styles.responsiveCard}>
+  <div className={styles.imageContainer}>
+    <img src={imageUrl} alt={title} className={styles.cardImage} />
   </div>
+  <div className={styles.cardContent}>
+    <h3 className={styles.cardTitle}>{title}</h3>
+    <p className={styles.cardText}>{text}</p>
+  </div>
+</div>
 );
 
 const Testimonials = ({ testimonials }) => {

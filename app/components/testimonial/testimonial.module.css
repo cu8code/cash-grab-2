@@ -1,13 +1,14 @@
 /* Testimonial.module.css */
 /* Testimonial.module.css */
 .testimonial {
-    height: 40vw;
+  position: relative;
+    height: 600px;
     background-color: #ffffff; /* White background for the card */
     border-radius: 10px; /* Rounded corners for the card */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     margin: 20px; /* Spacing around the card */
     padding: 25px; /* Padding inside the card */
-    max-width: 600px; /* Max width to ensure readability */
+    /* max-width: 600px; Max width to ensure readability */
     text-align: center; /* Center the text */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
   }
@@ -25,6 +26,7 @@
     object-fit: cover; /* Ensure the image covers the area without stretching */
     border: 3px solid #f0f0f0; /* Optional border for the image */
   }
+
   .testimonialTitle {
     display: flex;
     flex-direction: row;
@@ -91,3 +93,61 @@
     border-color: #cccccc; /* Slightly darker border on hover */
   }
   
+
+
+  /* ResponsiveCard.module.css */
+.responsiveCard {
+  display: flex;
+  flex-direction: row; /* Default to row layout */
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.imageContainer {
+  flex-shrink: 0; /* Prevent image from shrinking */
+  margin-right: 20px;
+}
+
+.cardImage {
+  width: 150px; /* Fixed width for the image */
+  height: 150px; /* Fixed height for the image */
+  object-fit: cover; /* Cover the area without stretching */
+  border-radius: 8px;
+}
+
+.cardContent {
+  flex-grow: 1; /* Allow content to grow and fill space */
+}
+
+.cardTitle {
+  margin: 0;
+  color: #333;
+  font-size: 1.25rem;
+}
+
+.cardText {
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Responsive layout for mobile devices */
+@media (max-width: 768px) {
+  .responsiveCard {
+    flex-direction: column; /* Stack image and content vertically */
+    align-items: flex-start; /* Align items to the start of the container */
+  }
+
+  .imageContainer {
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 20px; /* Add bottom margin */
+  }
+
+  .cardImage {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Adjust height automatically */
+  }
+}
